@@ -1,0 +1,69 @@
+.init()                              # Inicializa os módulos do Pygame.
+pygame.init()                        # Inicializa o Pygame.
+
+.quit()                              # Encerra os módulos do Pygame.
+pygame.quit()                        # Encerra o Pygame.
+
+.display.set_mode(())                # Cria a janela do jogo.
+pygame.display.set_mode((800, 600))  # Cria uma janela de 800x600 pixels.
+
+.FULLSCREEN                          # Abre a janela em tela cheia.
+pygame.FULLSCREEN                    # Constante usada para ativar tela cheia.
+
+.display.set_caption()               # Define o título da janela.
+pygame.display.set_caption("Meu Jogo")  # Define o título como "Meu Jogo".
+
+.display.update()                    # Atualiza o conteúdo da janela.
+pygame.display.update()              # Mostra os desenhos feitos na tela.
+
+.fill()                              # Preenche uma superfície com uma cor.
+tela.fill((0, 0, 255))               # Preenche a tela com azul.
+
+.draw.rect()                         # Desenha um retângulo na tela.
+pygame.draw.rect(tela, (0, 255, 0), (10, 10, 100, 50))
+# Desenha um retângulo verde em x=10, y=10, largura=100 e altura=50.
+
+.image.load()                        # Carrega uma imagem de um arquivo.
+pygame.image.load("Imagens/mario.webp")  # Carrega a imagem do Mario.
+
+.convert_alpha()                     # Preserva a transparência da imagem.
+imagem.convert_alpha()               # Prepara a imagem para ser exibida com transparência.
+
+.transform.scale()                   # Redimensiona uma imagem.
+pygame.transform.scale(imagem, (50, 50))  # Redimensiona para 50x50 pixels.
+
+.blit()                              # Desenha uma imagem em uma superfície.
+tela.blit(imagem, (100, 200))        # Desenha a imagem na posição x=100, y=200.
+
+.Rect()                              # Cria um retângulo com posição e dimensões.
+pygame.Rect(100, 200, 50, 50)        # Retângulo em x=100, y=200, tamanho 50x50.
+
+.event.get()                         # Obtém os eventos que aconteceram.
+pygame.event.get()                   # Usado normalmente dentro do loop principal.
+
+.QUIT                               # Evento gerado quando a janela é fechada.
+pygame.QUIT                         # Identifica o fechamento da janela.
+
+.KEYDOWN                            # Evento que acontece quando uma tecla é pressionada.
+pygame.KEYDOWN                      # Verifica se houve um evento de pressionamento.
+
+.key.get_pressed()                  # Obtém o estado atual das teclas.
+pygame.key.get_pressed()            # Permite verificar teclas mantidas pressionadas.
+
+.K_a                                # Representa a tecla A.
+pygame.K_a                          # Usada para movimentar o personagem para a esquerda.
+
+.K_d                                # Representa a tecla D.
+pygame.K_d                          # Usada para movimentar o personagem para a direita.
+
+.K_w                                # Representa a tecla W.
+pygame.K_w                          # Pode ser usada para fazer o personagem pular.
+
+.K_UP                               # Representa a seta para cima.
+pygame.K_UP                         # Também pode ser usada para fazer o personagem pular.
+
+.time.Clock()                       # Cria um relógio para controlar o FPS.
+pygame.time.Clock()                 # Cria o objeto de controle de tempo.
+
+.tick()                             # Controla a velocidade do loop.
+clock.tick(60)                      # Limita o loop a aproximadamente 60 FPS.
